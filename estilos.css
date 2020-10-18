@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-fluid{
+    margin-top: 15px;
+}
+
+#galeria .col-lg-4{
+    padding: 20px;
+}
+
+#galeria img:hover {
+    border: 5px solid white;
+}
+
+#resultado01 {
+    
+    width: fit-content;
+}
+
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }

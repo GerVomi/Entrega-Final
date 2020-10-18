@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+   <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">HomeFreylo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Principal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal"
+              data-target="#contactoModal" >Contacto</a>
+            </li>
+            </ul>
+        </div>
+      </nav>
+
+      <div class="text-center">
+      <img src="home_page-0001.jpg"  class="img-fluid" alt="Responsive image">
+      </div>
+      
+      <hr> 
+       <!--galeria con cards y un pequenio efecto en las imagenes -->
+      <section id="galeria" class="container" >
+          <div class="text-center pt-5">
+            
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="001.jpeg" class="card-img-top" id='imagen-producto' >
+                <div class="card">
+                  <p id='nombre-producto'class="card-text">Tazas personalizadas  <p id ='precio-producto'>$100</p></p>
+                  <a  id='1' class="btn btn-primary">Agregar</a>    
+                 </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="002.jpeg" class="card-img-top" id='imagen-producto'>
+                <div class="card">
+                  <p id='nombre-producto' class="card-text">Juego de mate <p id ='precio-producto'>$500</p></p>
+                  <a id='2'   class="btn btn-primary">Agregar</a>    
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="015.jpeg" class="card-img-top " id='imagen-producto' >
+                <div class="card">
+                  <p id='nombre-producto' class="card-text">Muffins avena<p id ='precio-producto'>$75</p></p>
+                  <a id='3' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="013.jpeg" class="card-img-top" id='imagen-producto'>
+                <div  class="card">
+                  <p id='nombre-producto' class="card-text">Tazas Modelo V <p id ='precio-producto'>$175</p></p>
+                  <a id='4' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="014.jpeg" class="card-img-top " id='imagen-producto' >
+                <div class="card">
+                  <p id='nombre-producto' class="card-text">Mates personalizados<p id ='precio-producto'>$100</p></p>
+                  <a id='5' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="012.jpeg" class="card-img-top " id='imagen-producto' >
+                <div class="card">
+                  <p  id='nombre-producto' class="card-text">Taza Dia de la Madre <p id ='precio-producto'>$200</p></p>
+                  <a id='6' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="007.jpeg" class="card-img-top" id='imagen-producto'>
+                <div  class="card">
+                  <p id='nombre-producto' class="card-text">Tazas vidrio personalizadas <p id ='precio-producto'>$125</p></p>
+                  <a id='7' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="008.jpeg" class="card-img-top " id='imagen-producto' >
+                <div  class="card">
+                  <p id='nombre-producto' class="card-text">Taza GRATITUD <p id ='precio-producto'>$750</p></p>
+                  <a id='9' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="009.jpeg" class="card-img-top " id='imagen-producto' >
+                <div  class="card">
+                  <p id='nombre-producto' class="card-text">Soperas <p id ='precio-producto'>$160</p></p>
+                  <a id='9' class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+            
+            </div>
+
+ <!-- uso de ajax -->
+        </div>
+
+        <div class="card" id='resultado01'>
+          <div class="card-header">
+           QUE DICEN NUESTROS CLIENTES?
+          </div>
+          <div class="card-body">
+           <p class="texto"></p>
+          
+          </div>
+        </div>
+
+         <!-- pie del carrito -->
+            </section>
+            <div class="shopp-container">
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <div class="shopping-cart-total d-flex align-items-center">
+                      <p class="mb-0">Total</p>
+                      <p class="ml-4 mb-0 totalCarrito">$0</p>
+                      <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                          data-delay="2000">
+                          <div class="toast-header">
+                              <span>✅</span>
+                              <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="toast-body text-white">
+                              Se aumentó correctamente la cantidad
+                          </div>
+                      </div>
+                      <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                          data-target="#comprarModal">Comprar</button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- modal de Compra -->
+          <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Pronto recibirá su pedido</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- modal de contacto -->
+      <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="comprarModalLabel">Nuestros contactos</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>+54 11-2233-5566 </p>
+                  <p>+54 11-3356-1122 </p>
+                  <p>homefreylo@hotmail.com.ar</p>
+                  <p>Dejanos tu correo para enviarte el newsletter!</p><button class='submit' onclick ="return guardarCorreo()" >Enviar</button>
+                  <input type="email" id='correo'>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+ <!--scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src='carrito.js'></script>
+</body>
+</html>
